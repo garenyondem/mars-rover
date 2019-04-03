@@ -1,7 +1,10 @@
-public interface IDirection
+namespace MarsRover.Interfaces
 {
-    string Name { get; }
-    void Move();
-    void TurnLeft();
-    void TurnRight();
+    public interface IDirection
+    {
+        string Name { get; }
+        void Move();
+        void TurnLeft();
+        void TurnRight();
+    }
 }
