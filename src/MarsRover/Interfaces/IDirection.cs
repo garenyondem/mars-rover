@@ -1,9 +1,11 @@
+using MarsRover.Models;
+
 namespace MarsRover.Interfaces
 {
     public interface IDirection
     {
         string Name { get; }
-        void Move();
+        Point Move();
         void TurnLeft();
         void TurnRight();
     }

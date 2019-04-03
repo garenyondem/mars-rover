@@ -13,7 +13,7 @@ namespace MarsRover.Models
         {
             _position = position;
         }
-        public void Move()
+        public Point Move()
         {
             if (string.Equals(Name, _cardinalDirections[0])) // Up
             {
@@ -31,6 +31,7 @@ namespace MarsRover.Models
             {
                 _position.DecreaseX();
             }
+            return _position.Point;
         }
         public void TurnLeft()
         {

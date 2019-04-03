@@ -4,8 +4,7 @@ namespace MarsRover.Models
 {
     public class Position : IPoisition
     {
-        public int x { get; private set; } = 0;
-        public int y { get; private set; } = 0;
+        public Point Point { get; private set; } = new Point();
         readonly Grid _grid;
         public Position(Grid grid)
         {
@@ -13,30 +12,30 @@ namespace MarsRover.Models
         }
         public void IncreaseX()
         {
-            if (x < _grid.width)
+            if (Point.x < _grid.width)
             {
-                x++;
+                Point.x++;
             }
         }
         public void DecreaseX()
         {
-            if (x > 0)
+            if (Point.x > 0)
             {
-                x--;
+                Point.x--;
             }
         }
         public void IncreaseY()
         {
-            if (y < _grid.height)
+            if (Point.y < _grid.height)
             {
-                y++;
+                Point.y++;
             }
         }
         public void DecreaseY()
         {
-            if (y > 0)
+            if (Point.y > 0)
             {
-                y--;
+                Point.y--;
             }
         }
     }
