@@ -2,7 +2,7 @@
 using MarsRover.Interfaces;
 using MarsRover.Models;
 
-namespace mars_rover
+namespace MarsRover
 {
     class Program
     {
