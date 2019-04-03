@@ -2,7 +2,7 @@ using MarsRover.Interfaces;
 
 namespace MarsRover.Models
 {
-    public class Position : IPoisition
+    public class Position : IPosition
     {
         public Point Point { get; private set; } = new Point();
         readonly Grid _grid;

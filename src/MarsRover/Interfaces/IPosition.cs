@@ -2,7 +2,7 @@ using MarsRover.Models;
 
 namespace MarsRover.Interfaces
 {
-    public interface IPoisition
+    public interface IPosition
     {
         Point Point { get; }
         void IncreaseX();

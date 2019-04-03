@@ -9,7 +9,7 @@ namespace MarsRover
         static void Main(string[] args)
         {
             var grid = new Grid(10, 5);
-            IPoisition initialPosition = new Position(grid);
+            IPosition initialPosition = new Position(grid);
             var myRover = new Rover(initialPosition);
             myRover.TurnRight();
             myRover.Move();

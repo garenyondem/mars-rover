@@ -6,10 +6,10 @@ namespace MarsRover.Models
 {
     public class Direction : IDirection
     {
-        readonly IPoisition _position;
+        readonly IPosition _position;
         static readonly string[] _cardinalDirections = { "N", "E", "S", "W" };
         public string Name { get; private set; } = _cardinalDirections.First(); // initial direction
-        public Direction(IPoisition position)
+        public Direction(IPosition position)
         {
             _position = position;
         }

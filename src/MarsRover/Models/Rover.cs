@@ -7,7 +7,7 @@ namespace MarsRover.Models
         public Point Point { get; private set; }
 
         public IDirection Direction { get; private set; }
-        public Rover(IPoisition position)
+        public Rover(IPosition position)
         {
             Direction = new Direction(position);
         }
