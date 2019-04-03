@@ -11,13 +11,16 @@ namespace MarsRover
             var grid = new Grid(10, 5);
             IPoisition initialPosition = new Position(grid);
             var myRover = new Rover(initialPosition);
-            myRover.TurnLeft();
+            myRover.TurnRight();
+            myRover.Move();
+            myRover.Move();
+            myRover.Move();
+            myRover.Move();
             myRover.TurnLeft();
             myRover.Move();
-            myRover.TurnRight();
-            Console.WriteLine(myRover.Direction.Name);
 
-            // TODO: Get current position info from Rover
+            Console.WriteLine($"{myRover.Point.x} {myRover.Point.y} {myRover.Direction.Name}");
+
             // TODO: Prep parser for external commands
         }
     }
